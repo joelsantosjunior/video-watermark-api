@@ -22,6 +22,8 @@ npm start
 ```
 
 ## Docker Installation
+This project needs ffmpeg to work, so you need to have it installed in your system. If you don't want to install it on your system, you can take advantage of docker to run the project. To run the project with docker, follow the steps below:
+
 1. Clone the repository
 2. Build the docker image
 ```
