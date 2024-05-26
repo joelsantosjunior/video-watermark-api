@@ -9,6 +9,10 @@ export const processVideo = async (req, res) => {
       process.env.UPLOAD_DIR,
       `${Date.now()}-output.mp4`,
     )
+    console.log("Processing video...")
+    console.log("Video path:", videoPath)
+    console.log("Watermark path:", watermarkPath)
+    console.log("Output path:", outputPath)
 
     await addWatermark(videoPath, watermarkPath, outputPath)
 

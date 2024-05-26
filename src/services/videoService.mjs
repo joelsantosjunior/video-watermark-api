@@ -12,7 +12,10 @@ export const addWatermark = async (videoPath, watermarkPath, outputPath) => {
           options: { x: 10, y: 10 },
         },
       ])
-      .on("end", resolve(outputPath))
+      .on("end", () => {
+        console.log("Watermark added to video")
+        resolve(outputPath)
+      })
       .on("error", (err) => reject(err))
       .save(outputPath)
   })
