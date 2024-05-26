@@ -1,0 +1,38 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "Video Watermark API",
+  "collectionId": "8665946e-8d9f-483e-bc26-78de3327c013",
+  "dateExported": "2024-05-26T22:14:05.011Z",
+  "version": "1.2",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "5ac54153-09a0-4312-9bf9-724d12761980",
+      "colId": "8665946e-8d9f-483e-bc26-78de3327c013",
+      "containerId": "",
+      "name": "Add Watermark",
+      "url": "http://localhost:3000/api/videos/upload",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2024-05-26T22:13:46.906Z",
+      "modified": "2024-05-26T22:13:46.906Z",
+      "headers": [],
+      "body": {
+        "type": "formdata",
+        "raw": "",
+        "form": [],
+        "files": [
+          {
+            "name": "video",
+            "value": "/Users/joeljunior/Downloads/IMG_3734.MOV"
+          },
+          {
+            "name": "watermark",
+            "value": "/Users/joeljunior/Downloads/cropped-viva-logo.png"
+          }
+        ]
+      }
+    }
+  ],
+  "ref": "2Mkj-csW__nnBHduFTpRUXkxOsE1NQzfWm4vfeOper5VMhD3R_byiXqqf2mnQVYN3qFUlF6v6mr5WHCS27r_3Q"
+}
