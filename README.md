@@ -16,7 +16,12 @@ api/videos/upload
 ```
 npm install
 ```
-3. Start the server
+3. Create a .env file with the following content
+```
+PORT=3000
+UPLOAD_DIR=uploads
+```
+4. Start the server
 ```
 npm start
 ```
@@ -29,7 +34,7 @@ This project needs ffmpeg to work, so you need to have it installed in your syst
 ```
 docker build -t watermark-api .
 ```
-1. Run the docker container
+3. Run the docker container
 ```
 docker run -p 3000:3000 watermark-api
 ```
