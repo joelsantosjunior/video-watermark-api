@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js",
+    "debug": "nodemon --inspect src/server.js",
     "lint": "eslint 'src/**/*.{js}'",
     "lint:fix": "eslint 'src/**/*.{js}' --fix"
   },
@@ -13,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^9.3.0",
+    "nodemon": "^3.1.1",
     "prettier": "^3.2.5"
   },
   "dependencies": {
